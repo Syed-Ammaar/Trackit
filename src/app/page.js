@@ -4,6 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 import Aircraft from "./Aircraftdetails/page";
 import { Button } from "@/components/ui/button";
+import WavyBackground from "@/components/ui/wavy-background";
 
 import {
   ResizableHandle,
@@ -32,61 +33,16 @@ export default function Home() {
   return (
     <>
       <div className="w-full h-screen px-5 z-1">
-        <div className="py-44 flex gap-24 items-center">
-          <div>
-            <h1 className="w-full font-mono uppercase text-left text-5xl leading-none tracking-tighter font-semibold">
-              Explore Aircraft 🛩️,
-            </h1>
-            <h1 className="w-full font-mono uppercase text-left text-5xl leading-none tracking-tighter font-semibold">
-              Ships 🚢 Database and
-            </h1>
-            <h1 className="w-full font-mono uppercase text-left text-5xl leading-none tracking-tighter font-semibold">
-              Live Radar 📡 Information.
-            </h1>
+        <WavyBackground color="purple">
+          <div className="py-44 flex gap-24 items-center h-screen">
+            <div>
+              <h1 className="w-full px-16 font-mono uppercase text-center text-7xl leading-none tracking-tighter font-semibold">
+                Explore Aircraft 🛩️,Ships 🚢 Database and Live Radar 📡
+                Information.
+              </h1>
+            </div>
           </div>
-
-          <div className="w-1/2 h-80">
-            <ResizablePanelGroup
-              direction="horizontal"
-              className="max-w-xl rounded-3xl border"
-              defaultSize={400} // Increase the overall size
-            >
-              <ResizablePanel defaultSize={50}>
-                <div className="flex h-full items-center justify-center object-cover bg-gradient-to-r from-indigo-200 to-blue-500 hover:scale-110 transition-transform duration-300 cursor-pointer">
-                  <img 
-                    src="/assets/plane-removebg-preview.png"
-                    alt="Image One"
-                    className="w-full h-max object-cover place-items-center"
-                  />
-                </div>
-              </ResizablePanel>
-              <ResizableHandle />
-              <ResizablePanel defaultSize={50}>
-                <ResizablePanelGroup direction="vertical">
-                  <ResizablePanel defaultSize={25}>
-                    <div className="flex h-full items-center justify-center bg-gradient-to-r from-red-300 to-orange-700 hover:scale-110 transition-transform duration-300 cursor-pointer">
-                      <img
-                        src="/assets/ship-contact-maci-14-removebg-preview.png"
-                        alt="Image Two"
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  </ResizablePanel>
-                  <ResizableHandle />
-                  <ResizablePanel defaultSize={25}>
-                    <div className="flex h-full items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:scale-110 transition-transform duration-300 cursor-pointer">
-                      <img
-                        src="/assets/jet-removebg-preview.png"
-                        alt="Image Three"
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  </ResizablePanel>
-                </ResizablePanelGroup>
-              </ResizablePanel>
-            </ResizablePanelGroup>
-          </div>
-        </div>
+        </WavyBackground>
 
         <hr></hr>
 
@@ -117,11 +73,11 @@ export default function Home() {
 
           <div className="flex flex-col gap-4">
             <h1 className="w-full font-mono uppercase text-left text-5xl leading-none tracking-tighter font-semibold">
-              Contact Me  📞
+              Contact Me 📞
             </h1>
-            
+
             <div className="flex gap-1 items-center">
-              <Avatar className='w-7 h-7'>
+              <Avatar className="w-7 h-7">
                 <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
