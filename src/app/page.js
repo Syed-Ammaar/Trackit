@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 import Aircraft from "./Aircraftdetails/page";
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "./ModeToggle/page";
+
 import {
   ResizableHandle,
   ResizablePanel,
