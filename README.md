@@ -38,3 +38,42 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 =======
 # Trackit
 >>>>>>> origin/main
+
+1. **Project Name:**
+   Trackit
+
+2. **Description:**
+   Explore Aircrafts 🛩️,ships 🚢 database and live radar 📡 information through this website.
+   
+4. **Features:**
+   Highlight the key features of the project:
+   - Search options with interactive UI. 
+   - Provides insights of aircrafts ,ships and military airlines.
+   - very handy and easy to use
+
+5. **Technologies Used:**
+   List the technologies and tools used to build the project :
+   - Next js
+   - React js 
+   - ShadCN
+   - Tailwind css
+   - Aceternity UI
+
+6. **Setup Instructions:**
+   Click this link or copy paste it :
+   https://syed-ammaar.github.io/Trackit/
+
+
+7. **Usage:**
+   - Enter the required search.
+   - Press enter to fetch the aircraft or ship data.
+
+9. **Contributing:**
+    Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests.
+   
+
+
+10. **Contact:**
+    For any questions or feedback, you can reach out to me at ammaarfarhan11@gmail.com
+    ```
+    Feel free to customize the content to better fit your project and its specific requirements. If you have any further questions or need additional assistance, let me know!
